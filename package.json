@@ -17,7 +17,7 @@
   "readme": "README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/OpusCapitaBES/js-react-showroom-server.git"
+    "url": "https://github.com/OpusCapitaBES/node-showroom-server.git"
   },
   "devDependencies": {
     "autoprefixer": "6.4.1",
