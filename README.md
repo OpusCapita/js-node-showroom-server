@@ -40,7 +40,7 @@ Common use-case - serve remotely at central server
   
   * Scan npm packages directories to find components. Only documented components will be added. Config [here](./src/tools/npm-scanner/config.js)
   
-  * Make bundles using [webpack configuration](./src/tools/npm-bundler/webpack.config.js). **Maybe you should not change it.**
+  * Make bundles using [webpack configuration](./src/tools/npm-bundler/webpack.config.js). **Maybe you should not change it**
   
   * Components **must** be available as fields of [npm package main file](https://docs.npmjs.com/files/package.json#main)
 
