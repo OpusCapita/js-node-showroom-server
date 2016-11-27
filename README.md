@@ -37,7 +37,7 @@ Common use-case - serve remotely at central server
   
   * Install **packages list** specified [here](./src/tools/npm-installer/config.js)
   
-  * Find components. Only documented components will be added. Config [here](./src/tools/npm-scanner/config.js)
+  * Scan npm packages directories to find components. Only documented components will be added. Config [here](./src/tools/npm-scanner/config.js)
   
   * Make bundles using [webpack configuration](./src/tools/npm-bundler/webpack.config.js). **Maybe you should not change it.**
   
