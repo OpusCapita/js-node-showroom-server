@@ -6,12 +6,8 @@ let semver = require('semver');
 module.exports = {
   packages: [
     {
-       name: 'test-showroom-activity',
-       versionsFilter: version => semver.gt(version, '1.0.2')
-    },
-    {
-       name: 'test-showroom-jcatalog-react-user-profile',
-       versionsFilter: version => semver.gt(version, '1.0.7')
+       name: 'jcatalog-react-reference-search',
+       versionsFilter: version => semver.gt(version, '2.2.8') && !/snapshot/gi.test(version)
     }
   ],
   installationRoot: libPath.resolve(libPath.join(__dirname, '../../../tmp/npm-installer/packages')),
