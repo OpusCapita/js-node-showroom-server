@@ -5,8 +5,7 @@
   "scripts": {
     "init-packages": "node ./src/init-packages.js",
     "lint": "eslint src",
-    "npm-build": "rimraf ./lib && webpack --config ./webpack.production.config",
-    "npm-publish": "npm run npm-build && npm-publish",
+    "npm-publish": "npm run npm-publish",
     "publish-release": "npm run npm-publish -- --release",
     "publish-snapshot": "npm run npm-publish",
     "start": "nodemon --watch src src/www/index --exec babel-node"
