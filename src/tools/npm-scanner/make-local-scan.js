@@ -30,7 +30,7 @@ function getScanResults(componentsRoot, config) {
   let cfg = config || {};
   let readmeMasks = cfg.readmeFileMasks || defaultConfig.readmeFiles.components;
   let componentClassFileSuffix = cfg.componentClassFileSuffix || '.react.js';
-  let scopeClassSuffix = cfg.scopeClassClassSuffix || '.scope.react.js';
+  let scopeClassSuffix = cfg.scopeClassClassSuffix || '.SCOPE.react.js';
 
   let packageRoot = walkUpAndFind(componentsRoot, 'package.json');
   let packageInfo = require(path.join(packageRoot, 'package.json'));
