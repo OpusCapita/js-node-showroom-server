@@ -26,7 +26,7 @@ Common use-case - serve remotely at central server
   
 * Host and port configuration [here](./serverConfig.js)
 
-* Make configuration and run this goal
+* Change configuration and run this goal
 
   ```shell
   npm run init-packages
