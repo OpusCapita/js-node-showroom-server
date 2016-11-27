@@ -4,7 +4,7 @@
 
 Server side for [shoroom-client](https://github.com/OpusCapitaBES/js-react-showroom-client).
 
-## Motivation to Develop
+## Motivation to develop
 
 * Easilly browsing with examples to pick the most appropriate component for your current task
 * Provide an **always actual documentation**
@@ -31,7 +31,7 @@ Server side for [shoroom-client](https://github.com/OpusCapitaBES/js-react-showr
   npm run init-packages
   ```
   
-### What This Goal do:
+### What this goal do:
   
   * Remove **packages installation root** directory named specified [here](./src/tools/npm-installer/config.js)
   
