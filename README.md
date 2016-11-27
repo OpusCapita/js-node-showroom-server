@@ -26,11 +26,12 @@ Common use-case - serve remotely at central server
   
 * Host and port configuration [here](./serverConfig.js)
 
-* Install packages and make bundles
+* Make configuration and run this goal
 
   ```shell
   npm run init-packages
   ```
+  
   **What this goal do:**
   
   * Remove **packages installation root** directory named specified [here](./src/tools/npm-installer/config.js)
