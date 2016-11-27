@@ -1,13 +1,12 @@
-# Showroom Server
+# Node - Showroom Server
 
 ## Synopsis
 
 Server side for [shoroom-client](https://github.com/OpusCapitaBES/js-react-showroom-client).
-Common use-case - serve remotely at central server
 
-## Motivation to Develop
+## Motivation to develop
 
-* Easilly browsing with examples to pick the most appropriate component for your current task
+* Easilly browsing react components with examples to pick the most appropriate component for your current task
 * Provide an **always actual documentation**
 
 ## Usage
@@ -15,7 +14,7 @@ Common use-case - serve remotely at central server
 * Clone repository
 
   ```shell
-  git clone https://github.com/OpusCapitaBES/js-react-showroom-server
+  git clone https://github.com/OpusCapitaBES/node-showroom-server
   ```
   
 * Install dependencies
@@ -32,7 +31,7 @@ Common use-case - serve remotely at central server
   npm run init-packages
   ```
   
-### What This Goal do:
+### What this goal do:
   
   * Remove **packages installation root** directory named specified [here](./src/tools/npm-installer/config.js)
   

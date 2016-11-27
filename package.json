@@ -20,7 +20,7 @@
   "readme": "README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/OpusCapitaBES/js-react-showroom-server.git"
+    "url": "https://github.com/OpusCapitaBES/node-showroom-server.git"
   },
   "devDependencies": {
     "@opuscapita/eslint-config": "1.0.0",
