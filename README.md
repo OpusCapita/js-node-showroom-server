@@ -1,10 +1,9 @@
-# Showroom
+# Showroom Server
 
 ## Synopsis
 
-React based components catalog which provide a **documentation** and **live examples**.
-
-![showroom-demo](./docs/demo.png)
+Server side for [shoroom-client](https://github.com/OpusCapitaBES/js-react-showroom-client)
+Common use-case - serve remotely at central server
 
 ## Motivation to develop
 
@@ -13,21 +12,43 @@ React based components catalog which provide a **documentation** and **live exam
 
 ## Usage
 
-### [Embedded](./docs/embedded.md)
+* Clone repository
 
-* Developer-side variant
-* **Always write** the documentation :pencil:
-* Take care about other developers and others take care about you :tophat:
+  ```shell
+  git clone https://github.com/OpusCapitaBES/js-react-showroom-server
+  ```
+  
+* Install dependencies
 
-### [Server application](./docs/server.md)
+  ```shell
+  npm install
+  ```
+  
+* Host and port configuration [here](./serverConfig.js)
 
-* Browse components catalog
-* See usage code examples
-* See **API** documentation
-* Change component properties and see whan happenned **in realtime**
-* Change component **version** to see appropriate documentation
+* Install packages and make bundles
 
-## Contacts:
+  ```shell
+  npm run init-packages
+  ```
+  **What this goal do:**
+  
+  * Remove **packages installation root** directory named specified [here](./src/tools/npm-installer/config.js)
+  
+  * Install **packages list** specified [here](./src/tools/npm-installer/config.js)
+  
+  * Find components. Only documented components will be added. Config [here](./src/tools/npm-scanner/config.js)
+  
+  * Make bundles using [webpack configuration](./src/tools/npm-bundler/webpack.config.js). **Maybe you should not change it.**
+  
+  * Components **must** be available as fields of [npm package main file](https://docs.npmjs.com/files/package.json#main)
+
+## Roadmap
+
+* Improve init-packages process
+* Make Docker container for easy deploy and update
+
+## Contributors
 
 * Alexey Sergeev - [alexey.sergeev@jcatalog.com](alexey.sergeev@jcatalog.com)
 * Kirill Volkovich - [kirill.volkovich@jcatalog.com](kirill.volkovich@jcatalog.com)
