@@ -15,7 +15,7 @@ Common use-case - serve remotely at central server
 * Clone repository
 
   ```shell
-  git clone https://github.com/OpusCapitaBES/js-react-showroom-server
+  git clone https://github.com/OpusCapitaBES/node-showroom-server
   ```
   
 * Install dependencies
