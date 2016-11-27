@@ -5,7 +5,7 @@
 Server side for [shoroom-client](https://github.com/OpusCapitaBES/js-react-showroom-client).
 Common use-case - serve remotely at central server
 
-## Motivation to develop
+## Motivation to Develop
 
 * Easilly browsing with examples to pick the most appropriate component for your current task
 * Provide an **always actual documentation**
@@ -32,7 +32,7 @@ Common use-case - serve remotely at central server
   npm run init-packages
   ```
   
-### What this goal do + configuration:
+### What This Goal:
   
   * Remove **packages installation root** directory named specified [here](./src/tools/npm-installer/config.js)
   
