@@ -6,7 +6,7 @@ Server side for [shoroom-client](https://github.com/OpusCapitaBES/js-react-showr
 
 ## Motivation to develop
 
-* Easilly browsing with examples to pick the most appropriate component for your current task
+* Easilly browsing react components with examples to pick the most appropriate component for your current task
 * Provide an **always actual documentation**
 
 ## Usage
