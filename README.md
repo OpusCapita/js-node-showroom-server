@@ -1,4 +1,4 @@
-# Showroom Server
+# React - Showroom Server
 
 ## Synopsis
 
