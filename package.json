@@ -5,7 +5,7 @@
   "scripts": {
     "init-packages": "node ./src/init-packages.js",
     "lint": "eslint src",
-    "npm-publish": "npm run npm-publish",
+    "npm-publish": "npm-publish",
     "publish-release": "npm run npm-publish -- --release",
     "publish-snapshot": "npm run npm-publish",
     "start": "nodemon --watch src src/www/index --exec babel-node"
