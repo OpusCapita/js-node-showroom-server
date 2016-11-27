@@ -32,7 +32,7 @@ Common use-case - serve remotely at central server
   npm run init-packages
   ```
   
-  **What this goal do:**
+  **What this goal do + configuration:**
   
   * Remove **packages installation root** directory named specified [here](./src/tools/npm-installer/config.js)
   
