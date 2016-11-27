@@ -3,7 +3,6 @@
 ## Synopsis
 
 Server side for [shoroom-client](https://github.com/OpusCapitaBES/js-react-showroom-client).
-Common use-case - serve remotely at central server
 
 ## Motivation to Develop
 
