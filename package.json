@@ -1,11 +1,14 @@
 {
   "name": "@opuscapita/showroom-server",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Server side and tools using with opuscapita-showroom-client.",
   "scripts": {
     "init-packages": "node ./src/init-packages.js",
     "lint": "eslint src",
-    "postversion": "git push",
+    "npm-build": "rimraf ./lib && webpack --config ./webpack.production.config",
+    "npm-publish": "npm run npm-build && npm-publish",
+    "publish-release": "npm run npm-publish -- --release",
+    "publish-snapshot": "npm run npm-publish",
     "start": "nodemon --watch src src/www/index --exec babel-node"
   },
   "author": {
@@ -20,6 +23,8 @@
     "url": "https://github.com/OpusCapitaBES/js-react-showroom-server.git"
   },
   "devDependencies": {
+    "@opuscapita/eslint-config": "1.0.0",
+    "@opuscapita/npm-scripts": "1.0.0",
     "autoprefixer": "6.4.1",
     "babel-cli": "6.5.1",
     "babel-core": "6.4.0",
