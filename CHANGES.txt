@@ -1,4 +1,13 @@
 
+Release 1.0.4 Tue Nov 29 2016 09:30:38 GMT+0300 (MSK)
+=======================================================
+
+ - Cleanup config files (Alexey Sergeev <alexey.sergeev@jcatalog.com>, Tue Nov 29 08:56:48 2016 +0300)
+ - Migrating from eslint-config-jcatalog to @opuscapita/eslint-config (Alexey Sergeev <alexey.sergeev@jcatalog.com>, Tue Nov 29 08:49:01 2016 +0300)
+ - Merge branch 'master' of opuscapita.github.com:OpusCapitaBES/node-showroom-server (5b17473 4313bbc, volkovich <Kirill.Volkovich@jcatalog.com>)
+ - Templorary fixed bug with finding SCOPE file on linux. (volkovich <Kirill.Volkovich@jcatalog.com>, Sun Nov 27 22:16:06 2016 +0300)
+ - Updating to a version to  1.0.4 (volkovich <Kirill.Volkovich@jCatalog.com>, Sun Nov 27 21:48:01 2016 +0300)
+
 Release 1.0.3 Sun Nov 27 2016 21:42:29 GMT+0300 (MSK)
 =======================================================
 
