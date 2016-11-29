@@ -2,6 +2,4 @@
 .idea
 tmp
 npm-debug.log
-/build
-/coverage
 /node_modules
