@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-Server side for [@opuscapita/showroom-client](https://github.com/OpusCapitaBES/js-react-showroom-client).
+Server side for [opuscapita-showroom-client](https://github.com/OpusCapitaBES/js-react-showroom-client).
 
 ## Motivation to develop
 

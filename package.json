@@ -1,7 +1,7 @@
 {
-  "name": "@opuscapita/showroom-server",
+  "name": "opuscapita-showroom-server",
   "version": "1.0.9",
-  "description": "Server side and tools using with @opuscapita/showroom-client",
+  "description": "Server side and tools using with 'opuscapita-showroom-client'",
   "scripts": {
     "init-packages": "node ./src/init-packages.js",
     "lint": "eslint src",
@@ -10,20 +10,16 @@
     "publish-snapshot": "npm run npm-publish",
     "start": "nodemon --watch src src/www/index --exec babel-node"
   },
-  "author": {
-    "name": "Kirill Volkovich",
-    "email": "volkovich@scand.com"
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
-  "main": "index.js",
-  "license": "UNLICENSED",
   "readme": "README.md",
   "repository": {
     "type": "git",
     "url": "https://github.com/OpusCapitaBES/js-node-showroom-server.git"
   },
   "devDependencies": {
-    "@opuscapita/eslint-config": "1.0.0",
-    "@opuscapita/npm-scripts": "1.0.0",
     "autoprefixer": "6.4.1",
     "babel-cli": "6.5.1",
     "babel-core": "6.4.0",
@@ -38,18 +34,19 @@
     "compression": "1.6.2",
     "cross-env": "1.0.7",
     "css-loader": "0.21.0",
-    "eslint": "3.10.2",
-    "eslint-config-jcatalog": "1.0.2",
+    "eslint": "3.11.1",
+    "eslint-config-opuscapita": "1.0.1",
     "eslint-plugin-react": "6.7.1",
     "express": "4.13.4",
     "file-loader": "0.9.0",
     "fs-extra": "0.30.0",
     "fuzzysearch": "1.0.3",
     "json-loader": "0.5.4",
-    "less": "^2.7.1",
+    "less": "2.7.1",
     "less-loader": "2.2.2",
     "mkdirp": "0.5.1",
     "nodemon": "1.9.1",
+    "opuscapita-npm-scripts": "1.0.0",
     "postcss-loader": "0.13.0",
     "raw-loader": "0.5.1",
     "react": "15.4.0",
