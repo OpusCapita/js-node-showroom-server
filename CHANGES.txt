@@ -1,4 +1,11 @@
 
+Release 1.0.10 Thu Dec 15 2016 10:53:41 GMT+0300 (+03)
+=======================================================
+
+ - Fixed npm-package readme (kirillvolkovich <kirill.volkovich@jcatalog.com>, Wed Dec 14 18:57:54 2016 +0300)
+ - Fixed eslint config import (kirillvolkovich <kirill.volkovich@jcatalog.com>, Wed Dec 14 18:51:41 2016 +0300)
+ - Updating to a version to  1.0.10 (kirillvolkovich <kirill.volkovich@jcatalog.com>, Wed Dec 14 18:49:28 2016 +0300)
+
 Release 1.0.9 Wed Dec 14 2016 18:49:20 GMT+0300 (+03)
 =======================================================
 
