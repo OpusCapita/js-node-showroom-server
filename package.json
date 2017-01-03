@@ -1,6 +1,6 @@
 {
   "name": "opuscapita-showroom-server",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "Server side and tools using with 'opuscapita-showroom-client'",
   "scripts": {
     "init-packages": "node ./src/init-packages.js",
