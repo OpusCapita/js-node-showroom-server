@@ -21,7 +21,7 @@ function getSectionIndexRange(ast, headerName) {
 
   let countOfSections = nextHeaderIndex - targetHeaderIndex;
   if (countOfSections > 0) {
-    return fill(countOfSections, '').map((el, i) => i + targetHeaderIndex);
+    return fill(Array(countOfSections), '').map((el, i) => i + targetHeaderIndex);
   }
   return [];
 }
