@@ -29,8 +29,8 @@ function isFileExists(packageRoot, relativePath) {
 function getScanResults(componentsRoot, config) {
   let cfg = config || {};
   let readmeMasks = cfg.readmeFileMasks || defaultConfig.readmeFiles.components;
-  let componentClassFileSuffix = cfg.componentClassFileSuffix || '.react.js';
-  let scopeClassSuffix = cfg.scopeClassClassSuffix || '.SCOPE.react.js';
+  let componentClassFileSuffix = cfg.componentClassFileSuffix || '.jsx';
+  let scopeClassSuffix = cfg.scopeClassClassSuffix || '.scope.jsx';
 
   let packageRoot = walkUpAndFind(componentsRoot, 'package.json');
   let packageInfo = require(path.join(packageRoot, 'package.json'));
@@ -76,7 +76,7 @@ function makeLocalScan(componentsRoot, destination, config) {
     let fileContent;
     let filePath = path.join(resultsDestination, `${scanResult}.js`);
     if (scanResult === 'componentsInfo') {
-      fileContent = addRequiresStrings(scanResults[scanResult])
+      fileContent = addRequiresStrings(scanResults[scanResult]);
     } else {
       fileContent = `module.exports = ${JSON.stringify(scanResults[scanResult], null, 4)}`;
     }

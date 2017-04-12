@@ -1,6 +1,6 @@
 {
   "name": "opuscapita-showroom-server",
-  "version": "1.1.1",
+  "version": "2.0.0-beta.0",
   "description": "Server side and tools using with 'opuscapita-showroom-client'",
   "scripts": {
     "init-packages": "node ./src/init-packages.js",
@@ -30,6 +30,7 @@
     "babel-preset-react": "6.3.13",
     "babel-preset-stage-0": "6.3.13",
     "babel-register": "6.5.2",
+    "commander": "^2.9.0",
     "compression": "1.6.2",
     "cross-env": "1.0.7",
     "css-loader": "0.21.0",
