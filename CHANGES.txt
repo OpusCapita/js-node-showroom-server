@@ -1,4 +1,9 @@
 
+Release 1.2.0 Thu Jun 01 2017 09:22:31 GMT+0300 (+03)
+=======================================================
+
+ - Add access:public field to publishConfig (Kirill Volkovich <volkovich@scand.com>, Thu Jun 1 09:22:10 2017 +0300)
+
 Release 1.2.0 Thu Jun 01 2017 09:21:35 GMT+0300 (+03)
 =======================================================
 
