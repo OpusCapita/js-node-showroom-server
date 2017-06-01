@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-Server side for [opuscapita-showroom-client](https://github.com/OpusCapitaBES/js-react-showroom-client).
+Server side for [@opuscapita/react-showroom-client](https://github.com/OpusCapita/react-showroom-client).
 
 ## Motivation to develop
 
@@ -14,7 +14,7 @@ Server side for [opuscapita-showroom-client](https://github.com/OpusCapitaBES/js
 * Clone repository
 
   ```shell
-  git clone https://github.com/OpusCapitaBES/js-node-showroom-server
+  git clone https://github.com/OpusCapita/react-showroom-server
   ```
 
 * Install dependencies

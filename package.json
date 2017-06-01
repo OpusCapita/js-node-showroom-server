@@ -1,7 +1,7 @@
 {
   "name": "@opuscapita/react-showroom-server",
   "version": "1.2.1",
-  "description": "Server side and tools using with 'opuscapita-showroom-client'",
+  "description": "Server side and tools using with '@opuscapita/react-showroom-client'",
   "scripts": {
     "init-packages": "node ./src/init-packages.js",
     "lint": "eslint src",
@@ -10,16 +10,15 @@
     "publish-snapshot": "npm run npm-publish",
     "start": "nodemon --watch src src/www/index --exec babel-node"
   },
+  "homepage": "https://github.com/OpusCapita/react-showroom-server",
   "license": "Apache-2.0",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/OpusCapitaBES/js-node-showroom-server.git"
-  },
+  "repository": "OpusCapita/react-showroom-server",
   "devDependencies": {
+    "@opuscapita/npm-scripts": "1.0.8",
     "autoprefixer": "6.4.1",
     "babel-cli": "6.5.1",
     "babel-core": "6.4.0",
@@ -46,7 +45,6 @@
     "less-loader": "2.2.2",
     "mkdirp": "0.5.1",
     "nodemon": "1.9.1",
-    "opuscapita-npm-scripts": "1.0.5",
     "postcss-loader": "0.13.0",
     "raw-loader": "0.5.1",
     "react": "15.4.0",
