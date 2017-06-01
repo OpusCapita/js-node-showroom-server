@@ -1,7 +1,7 @@
 {
   "name": "@opuscapita/react-showroom-server",
   "version": "1.2.1",
-  "description": "Server side and tools using with '@opuscapita/react-showroom-client'",
+  "description": "Server side and tools to be used together wtih '@opuscapita/react-showroom-client'",
   "scripts": {
     "init-packages": "node ./src/init-packages.js",
     "lint": "eslint src",
