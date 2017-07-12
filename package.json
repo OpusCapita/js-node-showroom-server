@@ -2,6 +2,9 @@
   "name": "@opuscapita/react-showroom-server",
   "version": "1.2.1",
   "description": "Server side and tools to be used together wtih '@opuscapita/react-showroom-client'",
+  "bin": {
+    "showroom-scan": "./src/bin/showroom-scan.js"
+  },
   "scripts": {
     "init-packages": "node ./src/init-packages.js",
     "lint": "eslint src",
