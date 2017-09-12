@@ -57,9 +57,10 @@ function getComponentsInPaths(paths, componentMask, readmeMask) {
 function addRequiresStrings(components) {
   /* stringify and surround some values with "require($value)" */
   let componentsToString = JSON.stringify(components, null, 2).
-  replace(new RegExp(/\"componentClass\": ("[^"]+")/g), '"componentClass": require($1).default').
-  replace(new RegExp(/\"scopeClass\": ("[^"]+")/g), '"scopeClass": require($1).default').
-  replace(new RegExp(/\"content\": ("[^"]+")/g), '"content": require($1)');
+    replace(new RegExp(/\"componentClass\": ("[^"]+")/g), '"componentClass": require($1).default').
+    replace(new RegExp(/\"scopeClass\": ("[^"]+")/g), '"scopeClass": require($1).default').
+    replace(new RegExp(/\"content\": "([^"]+)"/g), '"content": require("!!raw-loader!$1")').
+    replace(new RegExp(/\"styles\": "([^"]+)"/g), '"styles": require("!!raw-loader!$1")');
   let componentsResults = `module.exports = ${componentsToString}`;
   return componentsResults;
 }

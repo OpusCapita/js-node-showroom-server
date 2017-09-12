@@ -31,6 +31,7 @@ function getScanResults(componentsRoot, config) {
   let readmeMasks = cfg.readmeFileMasks || defaultConfig.readmeFiles.components;
   let componentClassFileSuffix = cfg.componentClassFileSuffix || '.react.js';
   let scopeClassSuffix = cfg.scopeClassClassSuffix || '.SCOPE.react.js';
+  let stylesSuffix = cfg.stylesSuffix || '.less';
 
   let packageRoot = walkUpAndFind(componentsRoot, 'package.json');
   let packageInfo = require(path.join(packageRoot, 'package.json'));
@@ -43,6 +44,9 @@ function getScanResults(componentsRoot, config) {
       ));
       let scopeClass = path.normalize('../../' +
         path.relative(packageRoot, path.join(componentRoot, `${componentInfo.name}${scopeClassSuffix}`)
+      ));
+      let styles = path.normalize('../../' +
+        path.relative(packageRoot, path.join(componentRoot, `${componentInfo.name}${stylesSuffix}`)
       ));
       let relativedRelatedFiles = componentInfo.relatedFiles.map(relatedFile =>
         Object.assign(
@@ -58,6 +62,9 @@ function getScanResults(componentsRoot, config) {
       }
       if (isFileExists(packageRoot, scopeClass)) {
         additionalComponentInfo.scopeClass = scopeClass;
+      }
+      if (isFileExists(packageRoot, styles)) {
+        additionalComponentInfo.styles = styles;
       }
       return Object.assign({}, nextComponentInfo, additionalComponentInfo);
     });
@@ -76,7 +83,7 @@ function makeLocalScan(componentsRoot, destination, config) {
     let fileContent;
     let filePath = path.join(resultsDestination, `${scanResult}.js`);
     if (scanResult === 'componentsInfo') {
-      fileContent = addRequiresStrings(scanResults[scanResult])
+      fileContent = addRequiresStrings(scanResults[scanResult]);
     } else {
       fileContent = `module.exports = ${JSON.stringify(scanResults[scanResult], null, 4)}`;
     }
