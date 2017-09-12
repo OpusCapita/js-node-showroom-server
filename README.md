@@ -1,5 +1,11 @@
 # Node - Showroom Server
 
+[![CircleCI Status](https://circleci.com/gh/OpusCapita/react-showroom-server/tree/master.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/OpusCapita/react-showroom-server)
+![badge-npm-version](https://img.shields.io/npm/v/@opuscapita/react-showroom-server.svg)
+[![NPM Downloads](https://img.shields.io/npm/dm/@opuscapita/react-showroom-server.svg)](https://npmjs.org/package/@opuscapita/react-showroom-server)
+![badge-license](https://img.shields.io/github/license/OpusCapita/react-showroom-server.svg)
+
+
 ## Synopsis
 
 Server side for [@opuscapita/react-showroom-client](https://github.com/OpusCapita/react-showroom-client).
