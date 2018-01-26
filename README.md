@@ -56,8 +56,8 @@ Server side for [@opuscapita/react-showroom-client](https://github.com/OpusCapit
 
 ## Contributors
 
-* Alexey Sergeev - [alexey.sergeev@jcatalog.com](alexey.sergeev@jcatalog.com)
-* Kirill Volkovich - [kirill.volkovich@jcatalog.com](kirill.volkovich@jcatalog.com)
+* Alexey Sergeev - [alexey.sergeev@opuscapita.com](alexey.sergeev@opuscapita.com)
+* Kirill Volkovich - [kirill.volkovich@opuscapita.com](kirill.volkovich@opuscapita.com)
 
 ## License
 
