@@ -8,9 +8,7 @@
   "scripts": {
     "init-packages": "node ./src/init-packages.js",
     "lint": "eslint src",
-    "npm-publish": "npm-publish",
-    "publish-release": "npm run npm-publish -- --release",
-    "publish-snapshot": "npm run npm-publish",
+    "publish-release": "npm publish",
     "start": "nodemon --watch src src/www/index --exec babel-node"
   },
   "homepage": "https://github.com/OpusCapita/react-showroom-server",
