@@ -39,22 +39,15 @@ function getScanResults(componentsRoot, config) {
   let componentsInfo = getComponentsInfo(packageInfo.name, packageInfo.version, componentsRoot, readmeMasks).
     map(componentInfo => {
       let componentRoot = path.dirname(componentInfo.relatedFiles.find(file => file.name === 'readme').path);
-      let componentClass = path.normalize('../../' +
-        path.relative(packageRoot, path.join(componentRoot, `${componentInfo.name}${componentClassFileSuffix}`)
-      ));
-      let scopeClass = path.normalize('../../' +
-        path.relative(packageRoot, path.join(componentRoot, `${componentInfo.name}${scopeClassSuffix}`)
-      ));
-      let styles = path.normalize('../../' +
-        path.relative(packageRoot, path.join(componentRoot, `${componentInfo.name}${stylesSuffix}`)
-      ));
-      let relativedRelatedFiles = componentInfo.relatedFiles.map(relatedFile =>
-        Object.assign(
-          {},
-          relatedFile,
-          { content: path.normalize('../../' + path.relative(packageRoot, relatedFile.path)) }
-        )
-      );
+      let componentClass = path.join(componentRoot, `${componentInfo.name}${componentClassFileSuffix}`);
+      let scopeClass = path.join(componentRoot, `${componentInfo.name}${scopeClassSuffix}`);
+      let styles = path.join(componentRoot, `${componentInfo.name}${stylesSuffix}`);
+      let relativedRelatedFiles = componentInfo.relatedFiles.map(relatedFile => {
+        return {
+          ...relatedFile,
+          content: relatedFile.path
+        }
+      });
       let nextComponentInfo = Object.assign({}, componentInfo, { relatedFiles: relativedRelatedFiles });
       let additionalComponentInfo = {};
       if (isFileExists(packageRoot, componentClass)) {
