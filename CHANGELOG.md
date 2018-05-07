@@ -1,4 +1,14 @@
 
+Release 1.4.0 Mon May 07 2018 16:30:37 GMT+0300 (MSK)
+=======================================================
+
+- Merge pull request [#2](https://github.com/OpusCapita/react-showroom-server/issues/2) from OpusCapita/issue-1 (GitHub 31243790+estambakio-sc@users.noreply.github.com, 2018-05-07 16:25:56 +0300)
+- Updated package version to 1.4.0 [ci skip] (Egor Stambakio stambakio@scand.com, 2018-05-07 16:25:14 +0300)
+- Abs paths instead of relative; inline `md` instead of !!raw-loader [#1](https://github.com/OpusCapita/react-showroom-server/issues/1) (Egor Stambakio stambakio@scand.com, 2018-05-07 16:18:36 +0300)
+- Adding an issue template file [ci skip] (Egor Stambakio egor.stambakio@opuscapita.com, 2018-05-02 12:26:06 +0300)
+- Updated build config. (Dmitry Shienok dshienok@scand.com, 2018-04-25 12:12:32 +0300)
+- Updating to a version to  1.3.2 (Alexey Sergeev sab@scand.com, 2018-01-26 08:10:46 +0300)
+
 Release 1.3.1 Fri Jan 26 2018 08:10:37 GMT+0300 (+03)
 =======================================================
 
