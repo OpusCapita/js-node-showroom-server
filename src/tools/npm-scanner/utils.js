@@ -63,7 +63,10 @@ function addRequiresStrings(components) {
       new RegExp(/\"content\": "([^"]+)"/g),
       (_, p1) => `"content": ${JSON.stringify(libFs.readFileSync(p1, 'utf8'))}`
     ).
-    replace(new RegExp(/\"styles\": "([^"]+)"/g), '"styles": require("!!raw-loader!$1")');
+    replace(
+      new RegExp(/\"styles\": "([^"]+)"/g),
+      (_, p1) => `"styles": ${JSON.stringify(libFs.readFileSync(p1, 'utf8'))}`
+    );
   let componentsResults = `module.exports = ${componentsToString}`;
   return componentsResults;
 }
