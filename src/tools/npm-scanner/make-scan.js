@@ -6,8 +6,8 @@ let findFiles = require('./utils').findFiles;
 let parseDocumentation = require('./parseDocumentation');
 
 function getComponentsInfo(packageName, version, versionRoot, componentsMasks) {
-  let findedFiles = componentsMasks.reduce((result, mask) => result.concat(findFiles(versionRoot, mask)), []);
-  return findedFiles.map(file => {
+  const foundFiles = componentsMasks.reduce((result, mask) => result.concat(findFiles(versionRoot, mask)), []);
+  return foundFiles.map(file => {
     let fileContent = libFs.readFileSync(file, 'utf-8');
     let parsedDocumentation = parseDocumentation(fileContent);
     let readmePath = libPath.resolve(versionRoot, file);
