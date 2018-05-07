@@ -1,6 +1,6 @@
 {
   "name": "@opuscapita/react-showroom-server",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Server side and tools to be used together wtih '@opuscapita/react-showroom-client'",
   "bin": {
     "showroom-scan": "./src/bin/showroom-scan.js"
